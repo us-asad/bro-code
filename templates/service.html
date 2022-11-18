@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'details/head.html' %}
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+      {% include 'details/header.html' %}
+   <!-- end header inner -->
+   <!-- end header -->
+
+      <!-- service section -->
+   <div id="service" class="service">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-7">
+               <div class="titlepage">
+                  <h2><strong class="yellow">Boʻlimlar</strong><br></h2>
+               </div>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon1.png' %}" alt="#" />
+                  <h3>Oʻquv ishlari boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon2.png' %}" alt="#" />
+                  <h3>Uslubiy ishlar boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon3.png' %}" alt="#" />
+                  <h3>Amaliyot ishlari boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon4.png' %}" alt="#" />
+                  <h3>Maʼnaviyat va maʼrifat ishlari boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon5.png' %}" alt="#" />
+                  <h3>Marketing va monitoring boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon6.png' %}" alt="#" />
+                  <h3>Xodimlar bilan ishlash boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <a class="read_more" href="#">Batafsil...</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- service section -->
+
+   <!--  footer -->
+      {% include 'details/footer.html' %}
+   <!-- end footer -->
+   <!-- Javascript files-->
+   {% include 'details/script.html' %}
+   </body>
+</html>

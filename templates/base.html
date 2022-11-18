@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'details/head.html' %}
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+      {% include 'details/header.html' %}
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- banner -->
+      {% block content %}
+      {% endblock content %}
+
+    <!--  footer -->
+   <!--  footer -->
+      {% include 'details/footer.html' %}
+   <!-- end footer -->
+   <!-- Javascript files-->
+   {% include 'details/script.html' %}
+   </body>
+</html>

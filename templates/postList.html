@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+   <div id="about" class="about">
+      <div class="container-fluid">
+         <div class="row">
+            {% for post in posts %}
+            <div class="col-md-12 col-lg-7">
+               <div class="about_box">
+                  <div class="titlepage">
+                     <a href="{{ post.get_absolute_url }}"><h2><br>{{ post.title }}</h2></a>
+                  </div>
+                  <h3>{{ post.author.title }}</h3>
+                  <strong class="yellow">{{ post.timestamp }}</strong><br>
+                  <p>{{ post.body }}</p>
+                  <span class="try"></span>
+                  <a class="read_morea" href="{{ post.get_absolute_url }}">batafsil...<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+               </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+               <div class="about_img">
+                  <figure><img src="{{ post.thumbnail.url }}" alt="#" /></figure>
+               </div>
+            </div>
+            {% endfor %}
+         </div>
+      </div>
+   </div>
+  {% endblock content %}

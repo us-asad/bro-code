@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+   <div id="about" class="about">
+      <div class="container-fluid">
+         <div class="row">
+          
+            <div class="col-md-12 col-lg-7">
+               <div class="about_box">
+                  <div class="titlepage">
+                     <h2><br>{{ post.title }}</h2>
+                     <strong class="yellow">{{post.timestamp}}</strong>
+                  </div>
+                  <h4><strong>{{ post.author.username.title }}</strong> </h4>
+                  <p>{{ post.body.title }}</p>
+                  <span class="try"></span>
+                  <br>
+                  <a class="read_morea" href="{% url 'post:index' %}">Bosh Sahifa<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  {% if request.user.is_staff %}
+                     <hr>
+                     <a class="read_morea" href="{% url 'post:post-update' post.pk %}">Update<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                     <a class="read_morea" class="btn btn-primary" href="{% url 'post:post-del' post.pk %}">Delete<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  {% endif %}
+               </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+               <div class="about_img">
+                  <figure><img src="{{ post.thumbnail.url }}" alt="..." class="img-fluid"></figure>
+               </div>
+            </div>
+      
+         </div>
+      </div>
+   </div>
+  {% endblock content %}

@@ -1,0 +1,617 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'details/head.html' %}
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+      {% include 'details/header.html' %}
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- banner -->
+   <section class="banner_main">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-7 col-lg-7">
+               <div class="text-bg">
+                  <h1>Aholi salomatligi uchun<br></h1>
+                  <span>Birgalikda mas'ulmiz!</span>
+                  <p></p>
+                  <a href="{% url 'post:about'%}">Biz haqimizda</a>
+               </div>
+            </div>
+            <div class="col-md-5 col-lg-5">
+               <div class="ban_img">
+                  <figure><img src="{% static 'images/nurse.png' %}" alt="#" /></figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end banner -->
+   <!-- about section -->
+   <div id="about" class="about">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-12 col-lg-7">
+               <div class="about_box">
+                  <div class="titlepage">
+                     <h2><strong class="yellow">Biz haqimizda</strong><br>O'rta tibbiyot va farmatsevtika xodimlari malakasini oshirish va ularni ixtisoslashtirish markazi</h2>
+                  </div>
+                  <h3>Termiz filiali</h3>
+                  <p>1984-yilda Termiz tibbiyot bilim yurti qoshida “oʻrta tibbiyot va dorishunos xodimlar malakasini oshirish boʻlimi” ochilgan. Boʻlimda faqat 1 ta maʼmuriy xona 2 ta oʻquv xona mavjud boʻlgan. </p>
+                  <span class="try"></span>
+                  <a class="read_morea" href="{% url 'post:about' %}">batafsil...<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+               </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+               <div class="about_img">
+                  <figure><img src="{% static 'images/img/p5.jpg' %}" alt="#" /></figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- about section -->
+   <!-- service section -->
+   <div id="service" class="service">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-7">
+               <div class="titlepage">
+                  <h2><strong class="yellow">Boʻlimlar</strong><br></h2>
+               </div>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon1.png' %}" alt="#" />
+                  <h3>Oʻquv ishlari boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon2.png' %}" alt="#" />
+                  <h3>Uslubiy ishlar boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon3.png' %}" alt="#" />
+                  <h3>Amaliyot ishlari boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon4.png' %}" alt="#" />
+                  <h3>Maʼnaviyat va maʼrifat ishlari boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon5.png' %}" alt="#" />
+                  <h3>Marketing va monitoring boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+               <div id="ho_color" class="service_box">
+                  <img src="{% static 'images/service_icon6.png'%}" alt="#" />
+                  <h3>Xodimlar bilan ishlash boʻlimi</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and1500s, </p>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <a class="read_more" href="#">Batafsil...</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- service section -->
+   <!-- portfolio -->
+   <div class="portfolio">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 ">
+               <div class="titlepage">
+                  <h2><strong class="yellow">Galereya</strong><br> Faoliyatimizdan fotolavhalar</h2>
+                  <span></span>
+                  <p>Markazimizda tinglovchilarni tahsil olishi uchun barcha sharoitlar yaratilgan. Darslar Oliy toifali pedagoglar tomonidan olib boriladi.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="myCarousel" class="carousel slide portfolio_Carousel " data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <div class="carousel-caption ">
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p1.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p2.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p5.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p4.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <a class="read_more" href="#">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p6.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p7.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p8.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p9.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <a class="read_more" href="#">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p10.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p11.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p12.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <div class="portfolio_img">
+                              <img src="{% static 'images/img/p13.jpg' %}" alt="#" />
+                              <div class="middle">
+                                 <div class="text2">View More</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <a class="read_more" href="#">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+         </a>
+         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+         </a>
+      </div>
+   </div>
+   <!-- end portfolio section -->
+   <!-- business  section -->
+   <div class="business">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-7">
+               <div class="titlepage">
+                  <h2><strong class="yellow">Natijalar</strong><br>2021 yilda bajarilgan ishlar</h2>
+                  <p></p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-3 col-sm-6">
+               <div id="ho_color" class="business_box">
+                  <i><img src="{% static 'images/business_icon1.png'%}" alt="#" /></i>
+                  <h3>4853</h3>
+                  <p>Jami tinglovchilar</p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+               <div id="ho_color" class="business_box">
+                  <i><img src="{% static 'images/business_icon2.png'%}" alt="#" /></i>
+                  <h3>3127</h3>
+                  <p>Malaka oshirish</p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+               <div id="ho_color" class="business_box">
+                  <i><img src="{% static 'images/business_icon3.png'%}" alt="#" /></i>
+                  <h3>586</h3>
+                  <p>Ixtisoslashtirish</p>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+               <div id="ho_color" class="business_box">
+                  <i><img src="{% static 'images/business_icon4.png'%}" alt="#" /></i>
+                  <h3>311</h3>
+                  <p>EKG bo'yicha</p>
+               </div>
+            </div>
+            <div class="col-md-12">
+               <a class="read_more" href="#">batfsil...</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end business  section -->
+   <!-- team  section -->
+   <div id="team" class="team">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2><strong class="yellow">Bizning Jamoa</strong><br>Bizda tajribali mutaxassislar faoliyat olib boradi</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div id="team" class="carousel slide team_Carousel " data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#team" data-slide-to="0" class="active"></li>
+                     <li data-target="#team" data-slide-to="1"></li>
+                     <li data-target="#team" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="container">
+                           <div class="carousel-caption ">
+                              <div class="row">
+                                 <div class="col-md-4 col-sm-6">
+                                    <div id="ho_bg" class="team_img">
+                                       <img src="{% static 'images/team1.png'%}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6">
+                                    <div id="ho_bg" class="team_img">
+                                       <img src="{% static 'images/team2.png'%}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 d_none1">
+                                    <div id="ho_bg" class="team_img ">
+                                       <img src="{% static 'images/team3.png' %}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row">
+                                 <div class="col-md-4 col-sm-6 d_none1">
+                                    <div id="ho_bg" class="team_img ">
+                                       <img src="{% static 'images/team1.png' %}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6">
+                                    <div id="ho_bg" class="team_img">
+                                       <img src="{% static 'images/team2.png' %}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6">
+                                    <div id="ho_bg" class="team_img">
+                                       <img src="{% static 'images/team3.png' %}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row">
+                                 <div class="col-md-4 col-sm-6">
+                                    <div id="ho_bg" class="team_img">
+                                       <img src="{% static 'images/team1.png' %}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6 d_none1">
+                                    <div id="ho_bg" class="team_img ">
+                                       <img src="{% static 'images/team2.png' %}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-6">
+                                    <div id="ho_bg" class="team_img">
+                                       <img src="{% static 'images/team3.png' %}" alt="#" />
+                                       <div class="ho_socal">
+                                          <ul class="social_icont">
+                                             <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                             <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                             <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#team" role="button" data-slide="prev">
+                     <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#team" role="button" data-slide="next">
+                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end team  section -->
+   <!-- testimonial -->
+   <div id="client" class="testimonial">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2><strong class="yellow">Mijozlarimiz fikrlari</strong><br>Tinglovchilarimiz biz haqimizda nima deyishadi</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="testimo" class="carousel slide testimonial_Carousel " data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#testimo" data-slide-to="0" class="active"></li>
+            <li data-target="#testimo" data-slide-to="1"></li>
+            <li data-target="#testimo" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <div class="carousel-caption ">
+                     <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                           <div class="test_box">
+                              <p>Bu dargohda ta'lim olib, ham shaxsan ham professional jihatdan o'sdim. Bu yerda o'z kasbini ustalari ta'lim berishadi. Hamkasblarimga tavsiya etaman.</p>
+                              <i><img src="{% static 'images/cos.jpg' %}" alt="#" /></i> <span>Tinglovchi</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                           <div class="test_box">
+                              <p>Men bu markazda o'z malakamni oshirganimdan so'ng, kareramda o'sish bo'ldi. ustozlarimga rahmat aytaman.</p>
+                              <i><img src="{% static 'images/cos.jpg' %} images/uzflag1.png" alt="#" /></i> <span>Tinglovchi</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                           <div class="test_box">
+                              <p>Men avval ishsiz edim, bu maskanda ixtisolashtirih bo'yicha ta'lim olib o'z ishimga ega bo'ldim</p>
+                              <i><img src="{% static 'images/cos.jpg' %}images/uzflag1.png" alt="#" /></i> <span>Tinglovchi</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#testimo" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+         </a>
+         <a class="carousel-control-next" href="#testimo" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+         </a>
+      </div>
+   </div>
+   <!-- end testimonial -->
+   <!-- contact  section -->
+   <div id="contact" class="contact ">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2><strong class="yellow">Biz bilan bog‘laning</strong><br>Murojaat yo‘llash</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-8 offset-md-2">
+               <form id="post_form" class="contact_form">
+                  <div class="row">
+                     <div class="col-md-12 ">
+                        <input class="contact_control" placeholder=" Ism, Familiya" type="type" name="Name">
+                     </div>
+                     <div class="col-md-12">
+                        <input class="contact_control" placeholder="Pochta manzili" type="type" name="Email">
+                     </div>
+                     <div class="col-md-12">
+                        <input class="contact_control" placeholder="Telefon raqami " type="type" name="Phone Number ">
+                     </div>
+                     <div class="col-md-12">
+                        <textarea class="textarea" placeholder="Murojaat mazmuni" type="type" Message="Name">Murojaat mazmuni </textarea>
+                     </div>
+                     <div class="col-md-12">
+                        <button class="send_btn">Yuborish</button>
+                     </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- end contact  section -->
+   <!--  footer -->
+      {% include 'details/footer.html' %}
+   <!-- end footer -->
+   <!-- Javascript files-->
+   {% include 'details/script.html' %}
+</body>
+
+</html>
